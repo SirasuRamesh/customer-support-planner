@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Support Portal & Daily Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Customer Support Portal & Daily Planner</h1>
+    <p>Modern interface for support requests and daily task tracking</p>
+  </header>
+
+  <main class="container">
+    <!-- Contact Form -->
+    <section class="card form-section">
+      <h2>Support Request Form</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email Address" required />
+        <textarea id="message" placeholder="Describe your issue..." required></textarea>
+        <button type="submit">Submit Request</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+
+    <!-- Task Planner -->
+    <section class="card todo-section">
+      <h2>Daily Planner</h2>
+      <div class="todo-input">
+        <textarea id="todoInput" placeholder="Add a new task... (e.g., Complete project report, Follow up with client)" rows="2"></textarea>
+        <button onclick="addTask()">Add Task</button>
+      </div>
+      <ul id="todoList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 | Created by Shivarathri Ramesh | ApexPlanet Internship</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
